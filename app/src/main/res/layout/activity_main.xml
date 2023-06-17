@@ -1,42 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/grey">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello"/>
+        android:text="@string/hello"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E41C1C"
+        android:id="@+id/tvHello"
+        android:layout_marginTop="10dp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/snackbar"
         android:textSize="20sp"
-        android:backgroundTint="#091F98"
+        android:backgroundTint="#015B83"
         android:fontFamily="sans-serif-black"
-        android:layout_gravity="bottom"
+        android:layout_gravity="center"
         android:layout_marginLeft="20dp"
-        android:id="@+id/btnSnackbar"/>
+        android:id="@+id/btnSnackbar"
+        android:layout_marginTop="30dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/alertDialogue"
         android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
         android:textSize="20sp"
+        android:backgroundTint="#015B83"
         android:fontFamily="sans-serif-black"
-        android:id="@+id/btnAlert"/>
+        android:id="@+id/btnAlert"
+        android:layout_marginTop="5dp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/customDialogue"
         android:textSize="20sp"
-        android:layout_gravity="center_vertical"
-        android:id="@+id/btnCustom"/>
+        android:layout_gravity="center"
+        android:id="@+id/btnCustom"
+        android:backgroundTint="#015B83"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
 
 
 </LinearLayout>
